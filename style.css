@@ -1,0 +1,702 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mainNav {
+  position: relative;
+}
+.mainNav2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0px 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 0px 10px gray;
+}
+/* Heading and logo styling */
+.headLogo {
+  display: flex;
+  align-items: center;
+}
+.headLogo .logo {
+  width: 2rem;
+  margin-right: 2px;
+}
+.headLogo h1:nth-child(2) {
+  text-transform: uppercase;
+  color: dodgerblue;
+  margin-right: 5px;
+}
+.headLogo h1:nth-child(3) {
+  font-size: 1.8rem;
+}
+/* Navbar styling */
+.mainNav2 .navBar {
+  display: flex;
+}
+.navBar li {
+  list-style: none;
+  margin: 0px 10px;
+}
+.navBar li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.mainNav2 li a:hover {
+  color: deepskyblue;
+}
+/* Slide show Images */
+.slideShowBar {
+  overflow: hidden;
+  position: relative;
+}
+.slideImages {
+  display: flex;
+  height: 52rem;
+  transition: transform 0.4s ease-in-out;
+}
+.slideImages img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slideShowBar .btn {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.slideShowBar .prev {
+  left: 10px;
+}
+.slideShowBar .next {
+  right: 10px;
+}
+.spanbgImg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000000b5, transparent);
+}
+.linesOnimg {
+  position: absolute;
+  top: 55%;
+  left: 50px;
+  text-shadow: 2px 2px 10px #000;
+}
+.linesOnimg .strongh strong {
+  font-size: 55px;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: dodgerblue;
+}
+.linesOnimg .strongh strong:nth-child(2) {
+  color: #fff;
+  margin-left: 10px;
+}
+.linesOnimg p {
+  font-size: 25px;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.linesOnimg p:nth-child(3) {
+  margin-bottom: 20px;
+}
+.linesOnimg .btna {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: dodgerblue;
+  text-decoration: none;
+  color: #000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: 0.3s;
+  text-shadow: none;
+}
+.linesOnimg .btna:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* next styling */
+.wordsHere {
+  height: 18rem;
+  margin: 60px;
+  text-align: center;
+  padding: auto;
+  position: relative;
+  padding: 20px 5px;
+}
+.wordsHere strong {
+  font-size: 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+.wordsHere span {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  left: 48%;
+  background-color: #000;
+}
+.wordsHere .span1 {
+  top: 1px;
+}
+.wordsHere .span2 {
+  top: 90%;
+}
+/* Learn from experts */
+.ExpertHead {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px;
+  color: darkslategrey;
+}
+.ExpertMainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+.Expert {
+  margin: 5px 10px;
+  text-align: center;
+  background-color: rgba(100, 148, 237, 0.388);
+  border-radius: 8px;
+  padding-bottom: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-shadow: 0px 0px 8px gray;
+}
+.Expert .ExpertImg {
+  width: 329px;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
+.ExpertImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Expert2 {
+  object-position: left;
+}
+.Expert5 {
+  object-position: left;
+}
+/* Open and closing the navbar by using menu icon */
+
+.mainNav2 .menuopen {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+
+/* Open and closing the navbar by using menu icon */
+
+/* Photos here about university */
+
+.collogePhotobg {
+  background-color: rgba(128, 128, 128, 0.372);
+  margin-top: 190px;
+  margin-bottom: 50px;
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.collegePhotos:nth-child(1) {
+  margin-top: -100px;
+}
+.collegePhotos:nth-child(2) {
+  margin-top: -100px;
+}
+.collegePhotos {
+  width: 600px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.collegePhotos p {
+  margin: 7px 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.collegePhotos p:nth-child(2) {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: rgb(78, 81, 84);
+}
+.collegePhotos p:nth-child(3) {
+  font-size: 20px;
+}
+.collegePhotos .collogeimg {
+  width: 600px;
+  height: 355px;
+}
+.collogeimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Photos here about university */
+
+/* here you will find */
+.coursesdegree {
+  font-size: 25px;
+  font-weight: 500;
+  color: darkslategrey;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  margin: 50px;
+}
+.BMphd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+.BMphd .bsc {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 15px;
+  width: 25rem;
+  height: 9rem;
+  margin: 15px 13px;
+  padding: 10px;
+  padding: auto 30px;
+  background-color: rgba(65, 105, 225, 0.372);
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px gray;
+}
+.BMphd .bsc:hover {
+  box-shadow: 0px 0px 3px gray;
+}
+.BMphd p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+.BMphdLearnMore {
+  margin: 60px 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.BMphdLearnMore p {
+  border-bottom: 1px solid #000;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 355;
+  cursor: pointer;
+}
+/* here you will find */
+
+/* no. of members */
+
+.noOfMember {
+  height: 25rem;
+  background: linear-gradient(45deg, #00000078, #00000057),
+    url(images/noofMember.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 70px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.noOfMember .member1 {
+  margin: 150px;
+}
+.noOfMember .member1 span {
+  font-size: 68px;
+}
+.noOfMember .member1 p {
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* no. of members */
+
+/* Some more info about university */
+
+.someInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20rem;
+  margin: 80px 0px;
+  padding: 30px 40px;
+  background-color: rgba(173, 166, 166, 0.137);
+  position: relative;
+}
+.headinfo {
+  width: 80rem;
+  margin-right: 30px;
+}
+.someInfo span {
+  background-color: #000;
+  position: absolute;
+  height: 125px;
+  width: 0.01em;
+  top: 0px;
+  right: 0px;
+  left: 40px;
+}
+.headinfo h2 {
+  font-size: 3rem;
+  color: #131212;
+  font-weight: 200;
+  font-family: "Times New Roman", Times, serif;
+}
+.headinfo p {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
+.someInfo .imagesGroup {
+  position: relative;
+  width: 70rem;
+  height: 455px;
+}
+.someInfo .imagesGroup img {
+  width: 350px;
+  position: absolute;
+  right: 5px;
+  border: 10px solid #fff;
+}
+.imagesGroup img:nth-child(1) {
+  right: 45px;
+  width: 550px;
+  top: 10px;
+}
+.imagesGroup img:nth-child(2) {
+  right: 315px;
+  width: 320px;
+  top: 205px;
+}
+.imagesGroup img:nth-child(3) {
+  right: 25px;
+  width: 240px;
+  top: 235px;
+}
+
+/* Some more info about university */
+
+/* Apply here */
+
+.applybg {
+  background: linear-gradient(45deg, #00000077, #00000085),
+    url(images/apply.jpg);
+  width: 100%;
+  height: 28rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.applybg .apply {
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffffcd;
+}
+.apply p {
+  margin-bottom: 15px;
+}
+.apply button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: 0;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.apply button:hover {
+  background-color: dodgerblue;
+}
+/* Apply here */
+
+/* footer */
+
+.footerpartbg {
+  background-color: rgb(3, 66, 129);
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.footerUniversity {
+  padding-top: 100px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.footerlogo address {
+  margin: 20px 0px;
+}
+.footerlogo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.footerlist {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footerlist p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.footerlist ul li {
+  list-style: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.footerlist ul li:hover {
+  color: rgb(93, 167, 241);
+}
+.socialMedia {
+  text-align: right;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  padding-right: 45px;
+}
+.socialMedia .fa-brands {
+  margin: 2px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.socialMedia .fa-brands:hover {
+  color: dodgerblue;
+}
+.footercopyright {
+  padding: 35px;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+/* footer */
+/* Above for Media Query below*/
+@media screen and (max-width: 415px) {
+  .mainNav2 {
+    flex-direction: column;
+    width: 100%;
+    max-height: 47px;
+    overflow: hidden;
+    padding: 5px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .headLogo .logo {
+    width: 30px;
+  }
+  .headLogo h1:nth-child(2) {
+    text-transform: uppercase;
+    color: dodgerblue;
+    margin-right: 5px;
+    font-size: 1.2rem;
+  }
+  .headLogo h1:nth-child(3) {
+    font-size: 1.2rem;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navBar li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .mainNav2 .menuopen {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+  }
+
+  .slideImages {
+    display: flex;
+    height: 100vh;
+    width: 2055px;
+    transition: transform 0.4s ease-in-out;
+  }
+  .slideImages img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  .slideImages img:nth-child(3) {
+    object-position: top left;
+  }
+  .linesOnimg {
+    top: 60%;
+    left: 15px;
+  }
+  .linesOnimg .strongh strong {
+    font-size: 2rem;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: dodgerblue;
+  }
+  .linesOnimg .strongh strong:nth-child(2) {
+    color: #fff;
+    margin-left: 10px;
+  }
+  .linesOnimg p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .wordsHere {
+    height: 18rem;
+    margin: 60px;
+    text-align: center;
+    padding: auto;
+    position: relative;
+    padding: 20px 5px;
+  }
+  .wordsHere strong {
+    font-size: 1.2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+  }
+  .wordsHere span {
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    left: 40%;
+    background-color: #000;
+  }
+  .wordsHere .span1 {
+    top: 1px;
+  }
+  .wordsHere .span2 {
+    top: 90%;
+  }
+  /* Professor */
+  .ExpertMainDiv {
+    overflow-x: hidden;
+  }
+  .Expert {
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  .ExpertImg {
+    width: 244px;
+    height: 244px;
+  }
+  /* College Photos */
+
+  .collegePhotos .collogeimg {
+    width: 320px;
+    height: 278px;
+  }
+  .collegePhotos:nth-child(1) {
+    margin-top: -100px;
+  }
+  .collegePhotos:nth-child(2) {
+    margin-top: 5px;
+  }
+  /* Here you will find */
+  .BMphd .bsc {
+    margin-top: 15px;
+  }
+  /* no of member */
+
+  .noOfMember {
+    flex-direction: column;
+    height: 42rem;
+  }
+  .noOfMember .member1 {
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  /* no of member */
+
+  /* some info */
+
+  .someInfo {
+    height: 55rem;
+    margin-bottom: 200px;
+  }
+  .imagesGroup {
+    margin-top: 810px;
+  }
+  .someInfo .imagesGroup img {
+    width: 50px;
+    position: absolute;
+    right: 5px;
+    border: 10px solid #fff;
+  }
+
+  .imagesGroup img:nth-child(1) {
+    right: 0px;
+    width: 320px;
+    top: 155px;
+    box-shadow: 0px 0px 4px gray;
+  }
+  .imagesGroup img:nth-child(2) {
+    right: 100px;
+    width: 200px;
+    top: 270px;
+    box-shadow: 0px 0px 8px gray;
+  }
+  .imagesGroup img:nth-child(3) {
+    right: 10px;
+    width: 120px;
+    top: 310px;
+    box-shadow: 0px 0px 12px gray;
+  }
+  /* some info */
+
+  /* footer */
+
+  .footerUniversity {
+    flex-direction: column;
+  }
+  .footerlist {
+    margin-top: 55px;
+  }
+
+  /* footer */
+}
