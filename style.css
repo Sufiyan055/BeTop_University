@@ -252,11 +252,16 @@
 .collegePhotos .collogeimg {
   width: 600px;
   height: 355px;
+  overflow: hidden;
 }
 .collogeimg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 2s ease-in-out;
+}
+.collogeimg img:hover {
+  transform: scale(1.2);
 }
 
 /* Photos here about university */
@@ -322,7 +327,7 @@
 .noOfMember {
   height: 25rem;
   background: linear-gradient(45deg, #00000078, #00000057),
-    url(images/noofMember.webp);
+    url(images/university.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,6 +336,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  background-attachment: fixed;
 }
 .noOfMember .member1 {
   margin: 150px;
